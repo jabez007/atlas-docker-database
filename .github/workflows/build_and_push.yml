@@ -23,6 +23,7 @@ jobs:
 
       - uses: jabez007/aws-kubectl/.github/shared/docker@master
         with:
+          tag: latest
           push: true
           debug: ${{ vars.pipeline_debug }}
         env:
