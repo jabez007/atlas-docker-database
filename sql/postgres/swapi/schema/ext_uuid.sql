@@ -1,0 +1,1 @@
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";  -- Enables the UUID generation functions

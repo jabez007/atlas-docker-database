@@ -1,0 +1,2 @@
+-- Create "users" table
+CREATE TABLE "users" ("user_id" uuid NOT NULL DEFAULT uuid_generate_v4(), "name" character varying(100) NOT NULL, "height" integer NULL, "mass" numeric(5,2) NULL, "hair_color" character varying(50) NULL, "skin_color" character varying(50) NULL, "eye_color" character varying(50) NULL, "birth_year" character varying(10) NULL, "gender" character varying(50) NULL, PRIMARY KEY ("user_id"), CONSTRAINT "users_height_check" CHECK (height > 0), CONSTRAINT "users_mass_check" CHECK (mass > (0)::numeric));
